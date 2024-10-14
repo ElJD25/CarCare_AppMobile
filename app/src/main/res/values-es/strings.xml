@@ -45,18 +45,30 @@
     <string name="tipo_mantenimiento">Tipo de mantenimiento</string>
     <string name="mantenimiento">Mantenimiento</string>
     <string name="fecha_mantenimiento">Fecha de mantenimiento</string>
-    <string name="Kilometraje">Kilometraje(km)</string>
+    <string name="Kilometraje">Kilometraje</string>
     <string name="kilo_actual">Actual</string>
     <string name="kilo_prox">Próximo</string>
     <string name="Fecha_proximo_mantenimiento">Fecha del próximo mantenimiento</string>
     <string name="Notas">Notas</string>
-    <string name="Costo">Costo</string>
-    <string name="Monto">Digita monto</string>
-    <string name="fecha_actual">Actual</string>
-    <string name="fecha_prox">Próximo</string>
+    <string name="ejm_fecha">9/10/2024</string>
     <string name="ejm_tipo">Escoge tipo</string>
     <string name="hint_dato">Escribe aqui...</string>
 
+    <!-- Registro auto -->
+    <string name="Placa_auto">Placa</string>
+    <string name="hint_placa">Ingresar Placa</string>
+    <string name="Año_Modelo">Año de modelo</string>
+    <string name="hint_añoModelo">Ingresar año</string>
+    <string name="marca_auto">Marca</string>
+    <string name="Modelo_carro">Modelo</string>
+    <string name="hint_marca">Seleccionar Marca</string>
+    <string name="hint_modelo">Seleccionar Modelo</string>
+    <string name="sistema_auto">Sistema</string>
+    <string name="sistema_a">Automático</string>
+    <string name="sistema_m">Mecánico</string>
+    <string name="bton_img">Subir imagen</string>
+
     <!-- Historial -->
     <string name="historial">Historial</string>
+    <string name="agregar_auto">Agregar Auto</string>
 </resources>

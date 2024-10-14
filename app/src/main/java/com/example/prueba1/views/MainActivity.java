@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,17 +16,28 @@ import com.example.prueba1.R;
 
 public class MainActivity extends AppCompatActivity {
     private Button ir_mosaico;
+    private ImageButton registrar_auto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         ir_mosaico = findViewById(R.id.Ir_mosaico);
         ir_mosaico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MosaicoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        registrar_auto = findViewById(R.id.registrar_auto);
+        registrar_auto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RegistroAuto.class);
                 startActivity(intent);
             }
         });

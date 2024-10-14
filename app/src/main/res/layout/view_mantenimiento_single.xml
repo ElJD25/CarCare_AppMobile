@@ -15,162 +15,81 @@
         android:padding="16dp">
 
         <LinearLayout
-            android:id="@+id/linearLayoutFechas"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/background_fecha_cardview"
-            android:gravity="center" >
+            android:orientation="horizontal" >
 
             <TextView
                 android:id="@+id/fecha_actual"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
-                android:fontFamily="@font/medium"
-                android:letterSpacing="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:text="9/10/2024"
                 android:textColor="@color/text_historial"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:fontFamily="@font/regular"
+                android:layout_weight="1" />
 
             <TextView
+                android:id="@+id/km_actual"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="-"
-                android:textColor="@color/text_historial"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/location_icon"
+                android:drawablePadding="4dp"
                 android:textSize="12sp"
-                android:fontFamily="@font/medium" />
-
-            <TextView
-                android:id="@+id/fecha_prox"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:text="9/01/2025"
-                android:textColor="@color/text_historial"
-                android:textSize="12sp"
-                android:fontFamily="@font/medium"
-                android:letterSpacing="0.05" />
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="23000 km"
+                android:textColor="@color/text_historial" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notas"
+            android:textSize="16sp"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/colorNegrita" />
 
         <TextView
             android:id="@+id/notas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Se realizó tal cosa..."
             android:textSize="12sp"
-            android:gravity="center_vertical"
             android:fontFamily="@font/regular"
-            android:textColor="@color/text_km_cardview"
-            android:drawableStart="@drawable/icon_notas"
-            android:drawablePadding="5dp"/>
+            android:textColor="@color/colorHolder" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/backgroundTint"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvProxMantenimiento"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:orientation="horizontal"
+            android:text="Próximo mantenimiento y kilometraje:"
+            android:textColor="@color/colorNegrita"
+            android:textSize="12sp"
+            android:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/fecha_prox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9/01/2025"
+            android:textColor="@color/text_historial"
+            android:textSize="12sp"
+            android:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/km_prox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/regular"
             android:gravity="center"
-            android:layout_gravity="center_horizontal">
-
-            <!-- Contenedor para el km actual -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginEnd="25dp">
-
-                <TextView
-                    android:id="@+id/km_actual"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="-4dp"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/bold"
-                    android:gravity="center"
-                    android:text="23000 km"
-                    android:textColor="@color/text_km_cardview"
-                    android:letterSpacing="0.04" />
-
-                <TextView
-                    android:id="@+id/km_actual_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="km actual"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/regular"
-                    android:textColor="@color/text_km_cardview" />
-            </LinearLayout>
-
-            <!-- Contenedor para el km próximo -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp">
-
-                <TextView
-                    android:id="@+id/km_prox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="-4dp"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/bold"
-                    android:gravity="center"
-                    android:text="23000 km"
-                    android:textColor="@color/text_historial"
-                    android:letterSpacing="0.04" />
-
-                <TextView
-                    android:id="@+id/km_prox_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="km próximo"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/regular"
-                    android:textColor="@color/text_historial" />
-            </LinearLayout>
-
-            <!-- Contenedor para el costo -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginStart="25dp">
-
-                <TextView
-                    android:id="@+id/costo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="-4dp"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/bold"
-                    android:gravity="center"
-                    android:text="S./ 45.5"
-                    android:textColor="@color/text_historial"
-                    android:letterSpacing="0.04" />
-
-                <TextView
-                    android:id="@+id/costo_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="costo"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/regular"
-                    android:textColor="@color/text_historial" />
-            </LinearLayout>
+            android:text="23000 km"
+            android:textColor="@color/text_historial" />
     </LinearLayout>
-    </LinearLayout>
+
+
+
 </androidx.cardview.widget.CardView>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".views.RegistroAuto"
+            android:exported="false" />
+        <activity
             android:name=".views.HistorialActivity"
             android:exported="false" />
         <activity

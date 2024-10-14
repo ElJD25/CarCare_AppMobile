@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-  <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.RegistroMantenimientoActivity"
+    tools:context=".views.RegistroAuto"
     android:background="@color/white">
 
     <LinearLayout
@@ -32,18 +32,6 @@
             android:contentDescription="@string/descripcion_flecha"
             app:srcCompat="@drawable/arrow"
             android:scaleType="fitCenter" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/semibold"
-            android:text="@string/registrar_mantenimiento"
-            android:textAlignment="textStart"
-            android:textColor="@color/colorNegrita"
-            android:textSize="24sp"
-            tools:ignore="TextSizeCheck" />
     </LinearLayout>
 
     <TextView
@@ -53,94 +41,15 @@
         app:layout_constraintVertical_bias="0.02"
         android:layout_marginStart="32dp"
         android:fontFamily="@font/semibold"
-        android:text="@string/tipo_mantenimiento"
+        android:text="@string/Placa_auto"
         android:textColor="@color/colorNegrita"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:fontFamily="@font/semibold"
-        android:text="@string/fecha_mantenimiento"
-        android:textColor="@color/colorNegrita"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tipo"
-        app:layout_constraintVertical_bias="0.02"/>
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:fontFamily="@font/semibold"
-        android:text="@string/Fecha_proximo_mantenimiento"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorNegrita"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Kilometraje"
-        app:layout_constraintVertical_bias="0.02"/>
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:fontFamily="@font/semibold"
-        android:text="@string/Notas"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorNegrita"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fecha_prox_mantenimiento"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="190dp"
-        android:fontFamily="@font/semibold"
-        android:text="@string/Kilometraje"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorNegrita"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fecha_mantenimiento"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <Spinner
-        android:id="@+id/Tipo"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/background_selecttext"
-        android:backgroundTint="@color/backgroundTint"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:layout_constraintVertical_bias="0.01"/>
-
     <EditText
-        android:id="@+id/Fecha_mantenimiento"
+        android:id="@+id/Placa_auto"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -153,7 +62,7 @@
         android:ems="10"
         android:focusable="false"
         android:fontFamily="@font/semibold"
-        android:hint="@string/ejm_fecha"
+        android:hint="@string/hint_placa"
         android:inputType="none"
         android:textColor="@color/colorNegrita"
         android:textColorHint="@color/textColorHint"
@@ -162,16 +71,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/semibold"
+        android:text="@string/Año_Modelo"
+        android:textColor="@color/colorNegrita"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Placa_auto"
+        app:layout_constraintVertical_bias="0.02"/>
+
     <EditText
-        android:id="@+id/Fecha_prox_mantenimiento"
+        android:id="@+id/Año_Modelo"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="226dp"
         android:autofillHints=""
         android:background="@drawable/background_selecttext"
         android:backgroundTint="@color/backgroundTint"
@@ -179,19 +102,20 @@
         android:ems="10"
         android:focusable="false"
         android:fontFamily="@font/semibold"
-        android:hint='@string/ejm_fecha'
+        android:hint="@string/hint_añoModelo"
         android:inputType="none"
         android:textColor="@color/colorNegrita"
         android:textColorHint="@color/textColorHint"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView9"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:id="@+id/Kilometraje"
+        android:id="@+id/Marca_ModeloT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -200,11 +124,52 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/Año_Modelo"
+        app:layout_constraintVertical_bias="0.01" >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintVertical_bias="0.02"
+
+            android:fontFamily="@font/semibold"
+            android:text="@string/marca_auto"
+            android:textColor="@color/colorNegrita"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="132dp"
+            android:fontFamily="@font/semibold"
+            android:text="@string/Modelo_carro"
+            android:textColor="@color/colorNegrita"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Marca_Modelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Marca_ModeloT"
         app:layout_constraintVertical_bias="0.01" >
 
-        <EditText
-            android:id="@+id/Kim_actual"
+        <Spinner
+            android:id="@+id/Marca_spinner"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -221,8 +186,8 @@
             android:textSize="14sp"
             android:layout_marginEnd="10dp" />
 
-        <EditText
-            android:id="@+id/Kim_prox"
+        <Spinner
+            android:id="@+id/Modelo_Spinner"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
@@ -241,36 +206,74 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/Notas"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:autofillHints=""
-        android:background="@drawable/background_selecttext"
-        android:backgroundTint="@color/backgroundTint"
-        android:ems="10"
+        app:layout_constraintVertical_bias="0.02"
         android:fontFamily="@font/semibold"
-        android:gravity="start|top"
-        android:hint="@string/hint_dato"
-        android:inputType="text"
-        android:textAlignment="viewStart"
+        android:text="@string/sistema_auto"
         android:textColor="@color/colorNegrita"
-        android:textColorHint="@color/textColorHint"
-        android:textDirection="anyRtl"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintTop_toBottomOf="@+id/Marca_Modelo" />
+
+    <RadioGroup
+        android:id="@+id/SistemaC"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.029">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/semibold"
+            android:padding="5dp"
+            android:text="@string/sistema_a"
+            android:textColor="@color/colorNegrita"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/semibold"
+            android:padding="5dp"
+            android:text="@string/sistema_m"
+            android:textColor="@color/colorNegrita"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+
+    <ImageButton
+        android:id="@+id/Subir_imagen"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descripcion_flecha"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SistemaC"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <Button
         android:id="@+id/BtnRegistrar"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_registrar"
         android:fontFamily="@font/semibold"
@@ -280,8 +283,12 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Notas"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/Subir_imagen"
+        app:layout_constraintVertical_bias="0.726" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

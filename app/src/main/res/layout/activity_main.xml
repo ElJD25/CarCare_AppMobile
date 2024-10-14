@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MainActivity"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".views.MainActivity">
 
     <TextView
         android:id="@+id/textView13"
@@ -21,6 +21,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05" />
+
+    <ImageButton
+        android:id="@+id/registrar_auto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/descripcion_flecha"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/suma_agregar" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/carCard"
@@ -42,9 +56,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" >
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
 
             <LinearLayout
                 android:id="@+id/auto_placa"
@@ -129,15 +143,15 @@
                 app:layout_constraintVertical_bias="0.5">
 
                 <Button
-                        android:id="@+id/Ir_mosaico"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/button_registrar"
-                        android:fontFamily="@font/semibold"
-                        android:text="@string/titulo_mante"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
+                    android:id="@+id/Ir_mosaico"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_registrar"
+                    android:fontFamily="@font/semibold"
+                    android:text="@string/titulo_mante"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/button4"
@@ -153,5 +167,6 @@
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

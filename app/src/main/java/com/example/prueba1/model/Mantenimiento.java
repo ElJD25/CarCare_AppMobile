@@ -1,16 +1,15 @@
 package com.example.prueba1.model;
 
 public class Mantenimiento {
-    String id_tipo, fecha, fecha_prox, km_actual, km_prox, costo, notas;
+    String id_tipo, fecha, fecha_prox, km_actual, km_prox, notas;
     public Mantenimiento(){}
 
-    public Mantenimiento(String id_tipo, String fecha, String fecha_prox, String km_actual, String km_prox, String costo, String notas) {
+    public Mantenimiento(String id_tipo, String fecha, String fecha_prox, String km_actual, String km_prox, String notas) {
         this.id_tipo = id_tipo;
         this.fecha = fecha;
         this.fecha_prox = fecha_prox;
         this.km_actual = km_actual;
         this.km_prox = km_prox;
-        this.costo = costo;
         this.notas = notas;
     }
 
@@ -52,14 +51,6 @@ public class Mantenimiento {
 
     public void setKm_prox(String km_prox) {
         this.km_prox = km_prox;
-    }
-
-    public String getCosto() {
-        return costo;
-    }
-
-    public void setCosto(String costo) {
-        this.costo = costo;
     }
 
     public String getNotas() {
