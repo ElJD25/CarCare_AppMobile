@@ -220,6 +220,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Marca_Modelo" />
 
+
     <RadioGroup
         android:id="@+id/SistemaC"
         android:layout_width="0dp"
@@ -229,7 +230,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.029">
+        app:layout_constraintVertical_bias="0.021">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -252,7 +253,6 @@
             android:textSize="12sp" />
     </RadioGroup>
 
-
     <ImageButton
         android:id="@+id/Subir_imagen"
         android:layout_width="48dp"
@@ -262,18 +262,19 @@
         android:contentDescription="@string/descripcion_flecha"
         android:padding="12dp"
         android:scaleType="fitCenter"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SistemaC"
-        app:layout_constraintVertical_bias="0.029"
+        app:layout_constraintVertical_bias="0.032"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <Button
         android:id="@+id/BtnRegistrar"
         android:layout_width="0dp"
-        android:layout_height="64dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_registrar"
         android:fontFamily="@font/semibold"
@@ -281,14 +282,24 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Subir_FotoI" />
+
+    <ImageView
+        android:id="@+id/Subir_FotoI"
+        android:layout_width="0dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Subir_imagen"
-        app:layout_constraintVertical_bias="0.726" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/SistemaC"
+        app:layout_constraintVertical_bias="0.323"
+        app:srcCompat="@drawable/car" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
